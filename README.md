@@ -2,21 +2,21 @@
 
 Este script busca recursivamente archivos `.mkv` dentro de la carpeta donde se ejecuta y sus subcarpetas, y permite multiplexarlos usando `mkvmerge.exe`. Los archivos multiplexados se guardan en la misma carpeta que el original con el sufijo `_multiplexado.mkv` para evitar conflictos.
 
----
+------------------------------------------------------------------------------------------------------------
 
 ## Requisitos
 
 * Python 3.x
-
-* `tqdm` (barra de progreso). Instalar con:
-
-  ```
-  pip install tqdm
-  ```
-
+_____________________________________________
+|* `tqdm` (barra de progreso). Instalar con:|
+|                                           |
+| ```                                       |
+| pip install tqdm                          |
+| ```                                       |
+---------------------------------------------
 * `mkvmerge.exe` debe estar en la misma carpeta donde se ejecuta el script o empaquetado con PyInstaller.
 
----
+----------------------------------------------------------------------------------------------------------
 
 ## Funcionalidades principales
 
