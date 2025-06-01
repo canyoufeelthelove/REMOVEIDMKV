@@ -26,7 +26,7 @@ _____________________________________________
 * **Evitación de conflictos:** Los archivos multiplexados se guardan con el sufijo `_multiplexado.mkv` en la misma carpeta que el archivo original.
 * **Compatibilidad con PyInstaller:** Soporta ejecución desde un ejecutable creado con PyInstaller, buscando `mkvmerge.exe` en la carpeta temporal `_MEIPASS`.
 
----
+-------------------------------------------------------------------------------------------------------------
 
 ## Uso
 
@@ -37,7 +37,7 @@ _____________________________________________
 5. Se procesarán los archivos seleccionados mostrando la barra de progreso.
 6. Los archivos multiplexados se guardarán junto al original con sufijo `_multiplexado.mkv`.
 
----
+-------------------------------------------------------------------------------------------------------------
 
 ## Código (breve descripción)
 
@@ -48,14 +48,10 @@ _____________________________________________
 * `mostrar_menu_y_elegir()`: Muestra el menú para seleccionar archivos.
 * `main()`: Lógica principal que coordina las funciones anteriores.
 
----
+-------------------------------------------------------------------------------------------------------------
 
 ## Notas
 
 * El script asume que `mkvmerge.exe` puede reportar progreso en la salida estándar, lo que permite actualizar la barra `tqdm`.
 * La barra de progreso muestra solo porcentaje, sin velocidad.
 * Si `mkvmerge.exe` no se encuentra, el script terminará mostrando un mensaje de error.
-
----
-
-Si necesitas, puedo ayudarte también a crear un archivo README.md con este contenido listo para usar. ¿Quieres?
