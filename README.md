@@ -59,4 +59,5 @@ _____________________________________________
 -------------------------------------------------------------------------------------------------------------
 
 ## script para complilar en windows
-scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." REMOVEIDMKV_1_00.py
+scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." --icon=icono.ico REMOVEIDMKV_1_00.py
+

@@ -3,7 +3,8 @@
  True,
  False,
  False,
- 'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ ['C:\\Users\\Winter-Soldier\\Downloads\\PROYECTOS '
+  'PROGRAMACION\\REMOVEIDMKV\\ico.ico'],
  None,
  False,
  False,
@@ -135,7 +136,7 @@
  [],
  False,
  False,
- 1748801145,
+ 1748811812,
  [('run.exe',
    'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
