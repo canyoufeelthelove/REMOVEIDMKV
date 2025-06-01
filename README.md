@@ -1,7 +1,3 @@
-¡Claro! Aquí tienes una documentación para el README que explica el propósito y uso del script, así como detalles técnicos relevantes:
-
----
-
 # Multiplexador de archivos MKV con `mkvmerge`
 
 Este script busca recursivamente archivos `.mkv` dentro de la carpeta donde se ejecuta y sus subcarpetas, y permite multiplexarlos usando `mkvmerge.exe`. Los archivos multiplexados se guardan en la misma carpeta que el original con el sufijo `_multiplexado.mkv` para evitar conflictos.
