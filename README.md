@@ -8,11 +8,11 @@ Este script busca recursivamente archivos `.mkv` dentro de la carpeta donde se e
 
 * Python 3.x
 _____________________________________________
-|* `tqdm` (barra de progreso). Instalar con:|
-|                                           |
-| ```                                       |
-| pip install tqdm                          |
-| ```                                       |
+* `tqdm` (barra de progreso). Instalar con:
+                                          
+ ```                                       
+ pip install tqdm                          
+ ```                                       
 ---------------------------------------------
 * `mkvmerge.exe` debe estar en la misma carpeta donde se ejecuta el script o empaquetado con PyInstaller.
 
