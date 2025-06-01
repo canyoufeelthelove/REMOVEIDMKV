@@ -55,3 +55,8 @@ _____________________________________________
 * El script asume que `mkvmerge.exe` puede reportar progreso en la salida estándar, lo que permite actualizar la barra `tqdm`.
 * La barra de progreso muestra solo porcentaje, sin velocidad.
 * Si `mkvmerge.exe` no se encuentra, el script terminará mostrando un mensaje de error.
+
+-------------------------------------------------------------------------------------------------------------
+
+## script para complilar en windows
+scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." REMOVEIDMKV_1_00.py
