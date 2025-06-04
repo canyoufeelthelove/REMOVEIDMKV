@@ -28,14 +28,18 @@ def obtener_mkvmerge_path():
         sys.exit(1)
     return mkvmerge_path
 
-def multiplexar_archivo(mkvmerge_path, video_path, output_path):
+def multiplexar_archivo(mkvmerge_path, video_path, output_path, forzar_aspecto=False):
     cmd = [
         mkvmerge_path,
         "--no-track-tags",
-        "--no-global-tags",
-        "-o", output_path,
-        video_path
+        "--no-global-tags"
     ]
+
+    if forzar_aspecto:
+        cmd += ["--aspect-ratio", "0:16/9"]  # 0 es la primera pista de video por defecto
+
+    cmd += ["-o", output_path, video_path]
+
     print(f"🛠️ Ejecutando: {' '.join(cmd)}")
 
     progress_re = re.compile(r'Progress: (\d+)%')
@@ -88,6 +92,14 @@ def mostrar_menu_y_elegir(archivos):
         else:
             print("❌ Opción inválida. Intente de nuevo.")
 
+def preguntar_aspect_ratio():
+    while True:
+        opcion = input("\n¿Deseas forzar el aspecto 16:9 (relación 16/9) en los videos? (s/n): ").strip().lower()
+        if opcion in ('s', 'n'):
+            return opcion == 's'
+        else:
+            print("❌ Entrada inválida. Escriba 's' o 'n'.")
+
 def main():
     mkvmerge_path = obtener_mkvmerge_path()
     input_folder = obtener_rutas()
@@ -101,13 +113,14 @@ def main():
         print("⚠️ No se seleccionaron archivos para multiplexar.")
         input("Presiona ENTER para salir...")
         return
+    forzar_aspecto = preguntar_aspect_ratio()
     tiempo_inicio = time.time()
     for archivo in seleccionados:
         carpeta_original = os.path.dirname(archivo)
         nombre_sin_ext = os.path.splitext(os.path.basename(archivo))[0]
         output_file = os.path.join(carpeta_original, f"{nombre_sin_ext}_multiplexado.mkv")
         print(f"\n🔍 Multiplexando {os.path.basename(archivo)}...")
-        multiplexar_archivo(mkvmerge_path, archivo, output_file)
+        multiplexar_archivo(mkvmerge_path, archivo, output_file, forzar_aspecto)
     tiempo_total = time.time() - tiempo_inicio
     print(f"\n✅ Multiplexado completado: {len(seleccionados)} archivo(s).")
     print(f"⏱️ Tiempo total: {tiempo_total:.2f} segundos.")
@@ -115,7 +128,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+    
 #
 #---------------------------------------------------------------------------------------------------------------#
 # scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." REMOVEIDMKV_1_00.py |
