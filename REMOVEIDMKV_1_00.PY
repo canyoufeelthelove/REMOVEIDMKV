@@ -116,5 +116,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-## scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." REMOVEIDMKV_1_00.py
+#
+#---------------------------------------------------------------------------------------------------------------#
+# scrips para compilar con PyInstaller: pyinstaller --onefile --add-binary "mkvmerge.exe;." REMOVEIDMKV_1_00.py |
+#---------------------------------------------------------------------------------------------------------------#
