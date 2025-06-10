@@ -19,7 +19,7 @@
    'PROGRAMACION\\REMOVEIDMKV\\mkvmerge.exe',
    'BINARY')],
  [],
- '3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit '
+ '3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit '
  '(AMD64)]',
  [('pyi_rth_inspect',
    'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
@@ -523,11 +523,11 @@
   ('multiprocessing',
    'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\multiprocessing\\__init__.py',
    'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_py_abc.py',
-   'PYMODULE'),
   ('_colorize',
    'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_colorize.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_py_abc.py',
    'PYMODULE'),
   ('stringprep',
    'C:\\Users\\Winter-Soldier\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\stringprep.py',
